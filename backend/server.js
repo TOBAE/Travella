@@ -1,18 +1,19 @@
 const express = require('express');
 const { json } = require("express");
 const connect = require('./config/database');
-
-connect ()
+const userRoute = require("./routes/userRouter");
+// const userMOdel = require(../)
+connect ();
 
 const app = express();
 app.use(json());
+// app.use(bodyParser.urlencoded({ extended: true }))
 
-
-// app.use("/", router);
-
+app.use("/", userRoute);
+app.use("/api/users", userRoute);
 
 app.get('/', (req,res) => {
-    res.send('<h1>Booking Flight App</h1>')
+    res.send('<h1>Booking Flight App</h1>');
 });
 
 
