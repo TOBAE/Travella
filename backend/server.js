@@ -1,8 +1,8 @@
 const express = require("express");
 const { json } = require("express");
-const connect = require('./config/database');
+const connect = require("./config/database");
 const userRoute = require("./routes/userRouter");
-const flightRouter = require('./routes/flightRouter');
+const flightRouter = require("./routes/flightRouter");
 
 connect ();
 
@@ -14,11 +14,11 @@ app.use("/", userRoute);
 app.use("/api/users", userRoute);
 app.use("/flights", flightRouter);
 
-app.get('/', (req,res) => {
-    res.send('<h1>Booking Flight App</h1>');
+app.get("/", (req,res) => {
+    res.send("<h1>Booking Flight App</h1>");
 });
 
-app.listen(3000, () => console.log(`Server Running at Port 3000`));
+app.listen(5000, () => console.log(`Server Running at Port 5000`));
 
 
 

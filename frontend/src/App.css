@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav{
+  position: absolute;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  margin: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+.logo{
+  font-size: 1.7rem;
+  font-style: italic;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ul{
+  display: flex;
+}
+
+ul li{
+  text-transform: capitalize;
+  list-style: none;
+  margin: 5px 20px;
+  font-size: 1.5rem;
+}
+
+.auth{
+  display: flex;
+  justify-content: space-between;
+  text-transform: capitalize;
+}
+
+.auth a{
+  font-size: 1.25rem;
+  margin: 5px;
+}
+ 
+span{
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: red;
+}
+
+.hero_container{
+  width: 100%;
+  background-image: url(image/hero-bck.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.title{
+  text-align: center;
+  color: palevioletred;
+}
+
+.hero_container img{
+  width: 100%;
+  height: 100%;
 }
