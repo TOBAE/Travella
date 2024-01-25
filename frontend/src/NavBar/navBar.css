@@ -1,0 +1,174 @@
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.5)), url(../image/bck2.jpg);
+    background-size: cover;
+    background-position: contain;
+}
+
+header{
+    /* position: fixed; */
+    display: flex;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    backdrop-filter: blur(50px);
+    background: rgba(0, 0, 0, .3);
+    padding: 10px 20px;
+}
+
+header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backdrop-filter: blur(50px);
+    background: rgba(0, 0, 0, .3);
+}
+
+header::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3));
+    transition: .5s;
+}
+
+header:hover::after{
+    left: 100%;
+}
+
+.logo{
+    font-size: 1.7rem;
+    font-style: italic;
+    color: #fff;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.navitem a{
+    margin-left: 25px;
+}
+  
+a{
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: #fff;
+}
+
+a:before {
+    content: '​';
+  }
+  
+.auth{
+    margin-left: 100px;
+}
+
+.auth a{
+    margin: 5px;
+}
+ 
+span{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+#check, .close{
+    display: none;
+}
+
+.icons{
+    position: absolute;
+    display: none;
+    right: 25px;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+    .auth{
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    header{
+        padding: 15px 25px;
+    }
+
+    .navitem a{
+        margin-left: 15px;
+    }
+
+    .logo{
+        font-size: 1.2rem;
+    }
+
+    .auth{
+        margin-left: 70px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .icons{
+        display: inline-block;
+    }
+
+    #check:checked~.icons .bar{
+        display: none;
+    }
+
+    #check:checked~.icons .close{
+        display: block;
+    }
+
+    nav{
+        position: absolute;
+        display: block;
+        text-align: center;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        backdrop-filter: blur(50px);
+        background: rgba(0, 0, 0, .3);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .3);
+        transition: .3s ease;
+        overflow: hidden;
+    }
+
+    #check:checked~nav{
+        height: 17.7rem;
+    }
+
+    .navitem a{
+        display: block;
+        margin: 20px 0;
+    }
+
+    .auth, .navitem a{
+        margin-left: 0px;
+    }    
+
+    .auth a, .navitem a{
+        transform: translateY(-50px);
+    }
+
+    #check:checked~.navitem a, #check:checked~.auth a{
+        transform: translateY(0);
+    }
+}
+  

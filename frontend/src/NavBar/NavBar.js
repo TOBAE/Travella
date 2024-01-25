@@ -1,28 +1,44 @@
-import React from 'react';
-// import './navBar.css';
-import Login from '../Auth/login'
-import Register from '../Auth/register'
+import React from "react";
+import "./navBar.css";
+import Login from "../Auth/login";
+import Register from "../Auth/register";
+import { RiMenu3Line } from "react-icons/ri";
+import { IoClose } from "react-icons/io5";
 
+export default function NavBar() {
+  var i 
+  i++
 
-export default function NavBar(){
-    return (
-        <nav>
-            <h2 className='logo'>travela airways</h2>
+  return (
+    <div className="banner">
+      <header>
+        <div>
+         <h2 className="logo">travela airways</h2>
+        </div>
 
-            <ul>
-                <li>home</li>
-                <li>book flight</li>
-                <li>deals</li>
-                <li>extras</li>
-                <li>newsletter</li>
-                <li>contact</li>
-            </ul>
+        <input type="checkbox" id="check" />
+        <label for="check" className="icons">
+          <RiMenu3Line className="bar" />
+          <IoClose className="close" />
+        </label>
 
-            <div className='auth'>
-                <a href={Login}>login</a>
-                <span>|</span>
-                <a href={Register}>register</a>
-            </div>
-        </nav>
-    )
+      <nav className="navbar">
+        <div className="navitem">
+          <a href="#" style={{transitionDelay : `calc(.15s * ${i} )`}}>book</a>
+          <a href="#" style={{transitionDelay : `calc(.15s * ${i} )`}}>deals</a>
+          <a href="#" style={{transitionDelay : `calc(.15s * ${i} )`}}>extras</a>
+          <a href="#" style={{transitionDelay : `calc(.15s * ${i} )`}}>newsletter</a>
+          <a href="#" style={{transitionDelay : `calc(.15s * ${i} )`}}>contact</a>
+        </div>
+
+        <div className="auth">
+          <a href={Login} style={{transitionDelay : `calc(.15s * ${i} )`}}>login</a>
+          <span>|</span>
+          <a href={Register} style={{transitionDelay : `calc(.15s * ${i} )`}}>register</a>
+        </div>
+      </nav>
+
+      </header>
+    </div>
+  );
 }
