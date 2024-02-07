@@ -2,7 +2,6 @@
     display: flex;
     justify-content: space-between;
     padding: 50px;
-    background-color: teal;
 }
 
 .activities{
@@ -104,6 +103,15 @@
 }
 
 @media screen and (max-width: 600px) {
+    .contact_container{
+        display: block;
+        padding: 50px 20px 30px;
+    }
+
+    .activities h2, .socials h2{
+        font-size: 1rem;
+    }
+
     .activities{
         text-align: center;
     }

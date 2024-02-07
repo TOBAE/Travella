@@ -4,10 +4,11 @@ import { FaHotel } from "react-icons/fa6";
 import { BsLuggage } from "react-icons/bs";
 import { IoCarSportSharp } from "react-icons/io5";
 import { FaPeopleGroup } from "react-icons/fa6";
+import { GiTeamUpgrade } from "react-icons/gi";
 
 export default function Extras() {
   return (
-    <div className='extra_section'>
+    <div id='travelExtras' className='extra_section'>
         <h1>Travel Extras</h1>
 
         <div className='extras_items'>
@@ -32,7 +33,7 @@ export default function Extras() {
             </div>
 
             <div className='extras'>
-                <p>icon</p>
+                <GiTeamUpgrade className='icon'/>
                 <h3>Upgrade flight</h3>
             </div>
 

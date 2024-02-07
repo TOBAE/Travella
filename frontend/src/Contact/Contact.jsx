@@ -27,7 +27,7 @@ export default function Contact() {
 
 
   return (
-    <div className='contact_container'>
+    <div id='contact' className='contact_container'>
         <div  className='activities'>
             <div className='activities_header'>
                 <h2>travela airways</h2>

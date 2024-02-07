@@ -34,9 +34,7 @@
     text-align: center;
 }
 
-
 /***** Flight Enquires Section *****/
-
 .flight_enquires{
     display: flex;
     margin: 10px 0 0 80px;
@@ -144,9 +142,7 @@ h3{
     background: #074e74;
 }
 
-
 /***** Departure Section *****/
-
 .departure_section{
     display: flex;
     align-items: center;
@@ -206,10 +202,7 @@ input{
     z-index: 1;
 }
 
-
-
 /* Trip Section */
-
 .trip{
     position: relative;
     margin-left: 10px;
@@ -247,18 +240,11 @@ input{
     display: none;
 }
 
-
-
 /**** Calender Section ****/
-
 .trip_depart{
     display: flex;
     margin: 30px 0;
 }
-
-/* .trip_depart input{
-    margin: 0 5px;
-} */
 
 input[type="date"]{
     background: #181717;
@@ -269,7 +255,7 @@ input[type="date"]{
 }
 
 input[type="date"]:first-child{
-    border-right: none;   
+    border-right: none; 
 }
 
 input[type="date"]:last-child{
@@ -285,7 +271,6 @@ input[type="date"]::-webkit-calendar-picker-indicator{
     filter: invert(1);
 }
 
-
 /* Show Flight */
 .show_flight{
     display: flex;
@@ -296,6 +281,7 @@ input[type="date"]::-webkit-calendar-picker-indicator{
 
 .promo_box{
     display: flex;
+    align-items: center;
     margin: 0 15px;
     color: #fff;
 }
@@ -332,7 +318,8 @@ input[type="date"]::-webkit-calendar-picker-indicator{
     }
 
     .flight_box{
-        background: #2a8abe;
+        /* background: #2a8abe; */
+        margin: -150px auto 100px;
         height: 350px;
     }  
     
@@ -349,60 +336,142 @@ input[type="date"]::-webkit-calendar-picker-indicator{
     }
 }
 
-@media only screen and (max-width: 450px){
-
+@media only screen and (max-width: 580px){
     .flight_box{
-        width: 95%;
-    }  
-    
-    .trip{
-        /* position: relative; */
-        margin-left: 0px;
+        height: 450px;
+    }
+
+    .flight_items h1{
+        font-size: 1rem;
+    }
+
+    .flight_header > div{
+        padding: 15px 0;
     }
 
     .flight_enquires{
-        margin: 5px 10px;
-    }
-
-    .departure_section{
-        padding: 5px 50px;
+        margin: 15px 50px;
     }
 
     .from_to{
         display: block;
-        /* margin: 0 50px; */
+        margin: 15px 50px;
     }
 
-    /* .trip_section{
+    .arrows{
+        display: none;
+    } 
+
+    .input_box input{
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .trip_section{
+        display: block;
         margin: 0 50px;
-    } */
+    }    
+
+    .trip_head{
+        border-radius: 5px;
+    }
+
+    .trip{
+        margin-left: 0px;
+    }
+
+    .trip_head h2{
+        font-size: 1rem;
+        margin-left: 0px;
+    }
     
-input{
-    height: 40px;
+    .trip_form{
+        display: none;
+    }
+
+    .trip_depart{
+        display: flex;
+        margin: 10px 0 0;
+    }
+
+    .trip_depart input{
+        width: 100%;
+    }
+
+    input[type="date"]:first-child{
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px; 
+    }
+
+    .show_flight{
+        margin: 30px 50px 10px;
+    }
+
+    .promo_box .plus_icon, .promo_box p{
+        font-size: 1rem;
+    }
+    
+    .show_flight .btn{
+        font-size: .8rem;
+    }
+ 
 }
 
+@media only screen and (max-width: 438px){
+    .flight_enquires h2{
+        font-size: 1.1rem;
+    }
 
-.input_box input{
-    width: 80%;
+    .dropdown{
+        font-size: 1.3rem;
+    }
+
+    .promo_box .plus_icon, .promo_box p{
+        font-size: .7rem;
+    }
+
+    .show_flight{
+        margin: 30px 40px 10px;
+    }
 }
 
-.input_icon{
-    margin-left: 15px;
-}
+@media only screen and (max-width: 370px){
+    .flight_items h1{
+        font-size: .8rem;
+    }
 
-.inp{
-    padding-left: 30px;
-}
+    .flight_header > div{
+        padding: 10px 0;
+    }
 
-.arrows{
-    font-size: 1.5rem;
-    margin: -5px 50%;
-    transform: rotate(90deg);
-}
+    .flight_enquires{
+        margin: 15px;
+    }
 
-/* Trip Section */
-.trip_head{
-    height: 40px;
-}
-   
+    .from_to{
+        display: block;
+        margin: 15px 20px;
+    }
+
+    .trip_section{
+        display: block;
+        margin: 0 20px;
+    }    
+
+    .trip_depart{
+        display: flex;
+        margin: 10px 0px 0;
+    }
+
+    .show_flight{
+        margin: 30px 10px 10px;
+    }
+
+    .promo_box .plus_icon, .promo_box p{
+        font-size: .8rem;
+    }
+    
+    .show_flight .btn{
+        font-size: .7rem;
+    }
 }

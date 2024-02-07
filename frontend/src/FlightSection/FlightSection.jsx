@@ -17,7 +17,7 @@ export default function FlightSection() {
   } 
 
   return (
-    <div className="flight_section">
+    <div id="flightSection" className="flight_section">
       <div className="flight_box">
         <div className="flight_header">
           <div className="flight_items">
@@ -115,13 +115,13 @@ export default function FlightSection() {
 
           <div className="trip_section">
             <div className="trip">
-                <div className="trip_head">
-                   <h2>Trip</h2>
-                   <MdArrowDropDown className="dropdown"/>
-                </div>
+              <div className="trip_head">
+                  <h2>Trip</h2>
+                  <MdArrowDropDown className="dropdown"/>
+              </div> 
 
-                <div className="trip_form">
-                 <div id="class" className="class">
+              <div className="trip_form">
+                <div id="class" className="class">
                     <div className="trip_options">
                       <span value="return" selected>Return</span>
                       <input type="radio"/>
@@ -136,8 +136,8 @@ export default function FlightSection() {
                        <span value="multi-city">Multi-city</span>
                        <input type="radio" />
                     </div>
-                 </div>
                 </div>
+              </div>
            </div>
 
             <div className="trip_depart">

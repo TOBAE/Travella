@@ -17,7 +17,6 @@
     text-align: center;
     border-radius: 5px;
     background-color: #e6e1cc;
-    /* border: 1px solid #000; */
     transition: .3s;
 }
 
@@ -26,12 +25,33 @@
     transform: translateY(-3px);
 }
 
-h3{
+.extras h3{
     margin-top: 8px;
     font-size: 1.1rem;
     color: #222;
 }
 
-.icon{
+.extras .icon{
     font-size: 2rem;
+}
+
+
+@media screen and (max-width: 992px) {
+    .extras{
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .extra_section h1{
+        font-size: 1.3rem;
+    }
+
+    .extras h3{
+        font-size: .8rem;
+    }
+
+    .extras .icon{
+        font-size: 1.5rem;
+    }
 }

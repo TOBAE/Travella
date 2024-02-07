@@ -3,7 +3,7 @@ import './newsletter.css'
 
 export default function Newsletter() {
   return (
-    <div className='news_container'>
+    <div id='newsletter' className='news_container'>
       <div className='news_details'>
         <h1>Never miss an offer</h1>
         <h4>Subscribe and be the first to receive our exclusive offers.</h4>

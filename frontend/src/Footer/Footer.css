@@ -1,12 +1,7 @@
-footer{
-    background-color: aquamarine;
-    /* padding-top: 30px; */
-}
-
 footer .hr{
     margin: 0 10px;
     border: none;
-    border-top: 2px solid rgb(64, 2, 2);
+    border-top: 1px solid #222;
 }
 
 .footer_txt{
@@ -22,7 +17,7 @@ footer .hr{
 }
 
 .footer_span{
-    color: #000;
+    color: #222;
     font-size: .9rem;
 }
 
@@ -41,5 +36,11 @@ footer h5{
     }
     footer h5{
         padding-top: 15px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer_span{
+        font-size: .8rem;
     }
 }

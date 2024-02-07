@@ -9,8 +9,8 @@
 header{
     /* position: fixed; */
     display: flex;
-    top: 0;
-    left: 0;
+    /* top: 0;
+    left: 0; */
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -19,7 +19,7 @@ header{
     padding: 10px 20px;
 }
 
-header::before{
+/* header::before{
     content: '';
     position: absolute;
     top: 0;
@@ -37,11 +37,11 @@ header::after{
     width: 100%;
     background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3));
     transition: .5s;
-}
+} */
 
-header:hover::after{
+/* header:hover::after{
     left: 100%;
-}
+} */
 
 .logo{
     font-size: 1.7rem;
@@ -54,21 +54,44 @@ nav{
     justify-content: space-between;
     align-items: center;
 }
-  
-.navitem a{
-    margin-left: 25px;
+
+.navitem{
+    display: flex;
 }
   
-a{
+.navitem li{
+    position: relative;
+    margin-left: 25px;
+    list-style: none;
+    transition: .3s ease-in-out;
+}
+
+/* .navitem li :hover, 
+.navitem li .active {
+    color: #75a1f2;
+}
+
+.navitem li :hover::after,
+.navitem li .active{
+    content: '';
+    position: absolute;
+    width: 30%;
+    height: 2px;
+    background: #75a1f2;
+    bottom: -4px;
+    left: 20px;
+} */
+  
+.navitem li, a{
     text-transform: capitalize;
     text-decoration: none;
     font-size: 1.25rem;
     color: #fff;
 }
 
-a:before {
+/* a:before {
     content: '​';
-  }
+  } */
   
 .auth{
     margin-left: 100px;
@@ -108,7 +131,7 @@ span{
         padding: 15px 25px;
     }
 
-    .navitem a{
+    .navitem li{
         margin-left: 15px;
     }
 
@@ -154,21 +177,25 @@ span{
         height: 17.7rem;
     }
 
-    .navitem a{
+    .navitem{
+        display: block;
+    }
+
+    .navitem li{
         display: block;
         margin: 20px 0;
     }
 
-    .auth, .navitem a{
+    .auth, .navitem li{
         margin-left: 0px;
     }    
 
-    .auth a, .navitem a{
+    /* .auth a, .navitem li{
         transform: translateY(-50px);
     }
 
     #check:checked~.navitem a, #check:checked~.auth a{
         transform: translateY(0);
-    }
+    } */
 }
   
