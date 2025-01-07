@@ -24,12 +24,12 @@ export default function FlightDeals() {
                 <div className='details'>
                     <div className='places'>
                        <RiPlaneLine className='plane plane_up'/>
-                       <h2>Beijing</h2>
+                       <h2>abuja</h2>
                     </div>
 
                     <div className='places'>
                         <RiPlaneLine className='plane plane_down'/>
-                        <h2>abuja</h2>
+                       <h2>Beijing</h2>
                     </div>
 
                     <p>from USD 521</p>
@@ -44,15 +44,15 @@ export default function FlightDeals() {
                <div className='details'>
                     <div className='places'>
                        <RiPlaneLine className='plane plane_up'/>
-                       <h2>dubai</h2>
+                       <h2>port harcourt</h2>
                     </div>
 
                     <div className='places'>
                         <RiPlaneLine className='plane plane_down'/>
-                        <h2>port harcourt</h2>
+                       <h2>dubai</h2>
                     </div>
 
-                    <p>from USD 521</p>
+                    <p>from USD 500</p>
                 </div>
             </div>
 
@@ -64,15 +64,15 @@ export default function FlightDeals() {
                <div className='details'>
                     <div className='places'>
                        <RiPlaneLine className='plane plane_up'/>
-                       <h2>valencia</h2>
+                       <h2>lagos</h2>
                     </div>
 
                     <div className='places'>
                         <RiPlaneLine className='plane plane_down'/>
-                        <h2>lagos</h2>
+                       <h2>valencia</h2>
                     </div>
 
-                    <p>from USD 521</p>
+                    <p>from USD 350</p>
                 </div>
             </div>
 
@@ -84,15 +84,15 @@ export default function FlightDeals() {
                <div className='details'>
                     <div className='places'>
                        <RiPlaneLine className='plane plane_up'/>
-                       <h2>rome</h2>
+                       <h2>enugu</h2>
                     </div>
 
                     <div className='places'>
                         <RiPlaneLine className='plane plane_down'/>
-                        <h2>enugu</h2>
+                       <h2>rome</h2>
                     </div>
                     
-                    <p>from USD 521</p>
+                    <p>from USD 800</p>
                 </div>
             </div>
 
@@ -104,15 +104,15 @@ export default function FlightDeals() {
                 <div className='details'>
                     <div className='places'>
                        <RiPlaneLine className='plane plane_up'/>
-                       <h2>berlin</h2>
+                       <h2>kano</h2>
                     </div>
 
                     <div className='places'>
                         <RiPlaneLine className='plane plane_down'/>
-                        <h2>kano</h2>
+                       <h2>berlin</h2>
                     </div>
 
-                    <p>from USD 521</p>
+                    <p>from USD 550</p>
                 </div>
             </div>
         </div>

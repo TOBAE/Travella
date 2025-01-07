@@ -1,8 +1,15 @@
+.flight_section{
+    position: relative;
+    margin-top: 450px;
+    /* width: 100%;
+    height: 100%; */
+}
+
 .flight_box{
     width: 90%;
     height: 300px;
     background: #003049;
-    margin: -100px auto 50px;
+    margin: 0 auto 50px;
     border-radius: 20px;
     box-shadow: 0px 5px 10px rgb(217, 213, 213);
 }
@@ -28,7 +35,7 @@
 }
 
 .flight_items h1{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: #222;
     text-transform: capitalize;
     text-align: center;
@@ -42,7 +49,7 @@
 
 .flight_enquires h2{
     margin-left: 8px;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     color: #fff;
 }
 
@@ -223,7 +230,7 @@ input{
 
 .trip_head h2{
     color: #fff;
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin-left: 15px;
 }
 
@@ -287,17 +294,18 @@ input[type="date"]::-webkit-calendar-picker-indicator{
 }
 
 .promo_box .plus_icon{
-    font-size: 1.1rem;
+    font-size: .8rem;
     border-radius: 5px;
 }
 
 .promo_box p{
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-left: 5px;
 }
 
 .show_flight .btn{
     color: #074e74;
+    font-size: .8rem;
 }
 
 .show_flight .btn:hover{

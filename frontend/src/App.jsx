@@ -12,19 +12,19 @@ import './App.css';
 
 export default function App() {
   return (
-    <Router>
+    // <Router>
 
     <div>
        <NavBar />
-       {/* <Hero />
+       <Hero />
        <FlightSection />
        <FlightDeals />
        <TravelExtras />
        <Newsletter />
        <Contact />
-       <Footer /> */}
+       <Footer />
 
-          <Routes> 
+          {/* <Routes> 
         <Route path='/hero' element={<Hero />} />
         <Route path='/flightSection' element={<FlightSection />} />
         <Route path='/flightDeals' element={<FlightDeals />} />
@@ -32,10 +32,10 @@ export default function App() {
         <Route path='/newsletter' element={<Newsletter />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/footer' element={<Footer />} />
-          </Routes>
+          </Routes> */}
 
     </div>
-    </Router>
+
 
   );
 }

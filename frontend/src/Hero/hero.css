@@ -1,18 +1,26 @@
 .hero_container{
-    position: relative;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.5)), url(../image/bck2.jpg);
+    background-size: cover;
+    background-position: contain;
 }
 
 .title{
-    /* position: absolute; */
+    position: absolute;
     text-align: center;
     color: palevioletred;
+    z-index: 1;
 }
 
-/* .image_container{
-    position: absolute;
+.image_container{
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
 .image_container img{
     width: 100%;
-    height: 100%;
-} */
+    height: 60%;
+}
