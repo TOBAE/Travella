@@ -1,0 +1,150 @@
+.contact_container{
+    display: flex;
+    font-family: sans-serif;
+    justify-content: space-between;
+    text-transform: capitalize;
+    padding: 50px;
+    color: #797878;
+}
+
+.activities_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.activities_icon{
+    display: none;
+    color: #797878;
+}
+
+.activities h2, .socials h2{
+    color: #797878;
+    font-size: 1.13rem;
+}
+
+.activities .list{
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.activities .list p{
+    margin: 15px 0;
+    font-size: 1rem;
+}
+
+.activities .list p:hover{
+    text-decoration: underline;
+    color: #363232;
+}
+
+.socials{
+    margin-left: 35px;
+}
+
+.social_items{
+    display: flex;
+    margin-top: 15px;
+}
+
+.socials_icon{
+    color: #797878;
+    border: 1.4px solid #797878;
+    border-radius: 20px;
+    font-size: 1.6rem;
+    margin-right: 10px;
+    padding: 5px;
+    transition: all 0.3s ease;
+}
+
+.socials_icon:hover {
+    color: #363232;
+    border: 1.4px solid #363232;
+}
+
+
+@media screen and (max-width: 992px) {
+    .contact_container{
+        display: flex;
+        flex-direction: column;
+        padding: 50px 30px;
+    }
+    
+    .activities {
+        border-bottom: 1px solid #ddd;
+    }
+
+    .activities_header{
+        padding: 20px;
+        background: rgb(207, 203, 203); 
+    }
+
+    .activities_header h2 {
+        font-size: 1rem;
+    }    
+
+    .activities_icon{
+        display: flex;
+        font-size: 20px;
+        transition: transform 0.3s ease;
+    }
+
+    .activities_icon.rotate {
+        transform: rotate(180deg);
+    }
+
+    .activities .list{
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px;
+        background: rgb(223, 222, 222);
+        margin: 0;
+        overflow: hidden;
+    }
+
+   .activities .list p{
+        margin: 5px 0 ;
+        font-size: .9rem;
+    }
+
+    .socials {
+        margin: 35px auto 0;
+    }
+
+    .socials h2 {
+        margin-bottom: 10px;
+    }
+
+    .social_items {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .socials_icon {
+        cursor: pointer;
+        transition: color 0.3s ease;
+    }
+
+}
+
+/* ===== Desktop View (Always Open Lists) ===== */
+@media screen and (min-width: 993px) {
+  .activities_icon {
+    display: none;
+  }
+
+  .activities .list {
+    max-height: none !important;
+    opacity: 1 !important;
+    overflow: visible !important;
+    transition: none !important;
+  }
+  
+
+  .activities_header {
+    cursor: default;
+  }
+}
+

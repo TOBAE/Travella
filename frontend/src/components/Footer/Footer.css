@@ -1,0 +1,45 @@
+footer .hr{
+    margin: 0 10px;
+    border: none;
+    border-top: 1px solid #363232;
+}
+
+.footer_txt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.copyright{
+    font-size: 1.3rem;
+    padding-top: 8px;
+    color: #363232;
+}
+
+footer h5,
+.footer_span{
+    color: #363232;
+    font-size: .9rem;
+}
+
+
+@media screen and (max-width: 992px) {
+    .footer_txt{
+        display: block;
+        text-align: center;
+    }
+
+    .footer_span{
+        font-size: .96rem;
+    }
+    footer h5{
+        padding-top: 15px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer_span{
+        font-size: .8rem;
+    }
+}

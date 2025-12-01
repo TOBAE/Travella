@@ -1,0 +1,606 @@
+.flight_section{
+    position: relative;
+    /* background: firebrick; */
+    margin-top: -40px;
+    padding-bottom: 30px;
+    z-index: 2;
+}
+
+.flight_box{
+    width: 90%;
+    height: 300px;
+    background: #003049;
+    margin: 0 auto 50px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px rgb(217, 213, 213);
+}
+
+.flight_header{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.flight_header > div{
+    background-color: #d4d4d4;
+    border: 1px solid #222;
+}
+
+.flight_header > div:first-child{
+    border-top-left-radius: 20px;
+}
+
+.flight_header > div:last-child{
+    border-top-right-radius: 20px;
+}
+
+.flight_items h1{
+    font-size: 1.2rem;
+    padding: 5px 0;
+    margin: 10px 0;
+    color: #222;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+/***** Flight Enquires Section *****/
+.flight_enquires{
+    display: flex;
+    margin: 10px 0 0 95px;
+}
+
+.head h2{
+    /* margin-left: 10px; */
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.head, 
+.trip_head{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.dropdown{
+    color: #fff;
+    font-size: 2rem;
+}
+
+.class_section, 
+.people_section,
+.trip_form{
+    position: absolute;
+    background-color: #ded8d8;
+    color: #000;
+    padding: 5px 0;
+    border-radius: 10px;
+    z-index: 3;
+}
+
+.economy_section, 
+.passengers{
+    position: relative;
+}
+
+.class{
+    padding: 5px;
+}
+
+.class_option.selected {
+  background: #222;
+  color: #fff;
+}
+
+.class span{
+    display: block;
+    font-size: 1rem;
+    padding: 8px 12px;
+    color: #000;
+    cursor: pointer;
+}
+
+.passengers{
+    margin-left: 25px;
+}
+
+.people_section{
+    width: 300px;
+    padding: 10px;
+}
+
+.people{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 12px;
+}
+
+.people h3{
+    font-size: 1rem;
+}
+
+.people_controls {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.count_btn {
+  background: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: .9rem;
+}
+
+.count_display {
+  min-width: 28px;
+  font-size: 1rem;
+  color: #222;
+  text-align: center;
+  font-weight: 600;
+}
+
+.people_btn{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 10px;
+}
+
+.btn, 
+.show_flight .btn{
+    margin: 0 10px;
+    padding: 8px 10px;
+    border-radius: 5px;
+    font-size: .9rem;
+    font-family: 'poppins';
+    font-weight: 500;
+    text-transform: uppercase;
+    outline: none;
+    border: 1px solid #003049;
+    transition: .8s;
+    cursor: pointer;
+}
+
+.btn1, 
+.btn2:hover{
+    background: transparent;
+    color: #003049;
+}
+
+.btn2, 
+.btn1:hover{
+    color: #fff;
+    background: #074e74;
+}
+
+/***** Departure Section *****/
+.departure_section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input{
+    height: 50px;
+    border: none;
+    outline: none;
+}
+
+::placeholder{
+    font-size: .9rem;
+}
+
+.from_to, .trip_section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.from_to input{
+    border-radius: 5px;
+    margin: 0 3px;
+}
+
+.input_box{
+    position: relative;
+}
+
+.input_box input{
+    width: 250px;
+
+}
+
+.input_icon{
+    position: absolute;
+    margin-left: 18px;
+    font-size: 1.3rem;
+    color: #222;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.inp{
+    padding-left: 40px;
+}
+
+.arrows{
+    position: relative;
+    font-size: 1.6rem;
+    margin: 0 -10px;
+    color: #fff;
+    background: #074e74;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+/* Trip Section */
+.trip{
+    position: relative;
+    margin-left: 10px;
+}
+
+.trip_head{
+    height: 50px;
+    padding: 0 15px;
+    background-color: #181717;   
+    border: 1px solid #fff;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.trip_head h2{
+    color: #fff;
+    font-size: 1rem;
+    margin-left: 15px;
+}
+
+.trip_form{
+    width: 150px;
+    padding: 0;
+}
+
+.trip_options{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12px;
+}
+
+.trip_options span{
+    color: #222;
+}
+
+.trip_options input[type="radio"]{
+    accent-color: #222;
+}
+
+.trip_head .dropdown{
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+/**** Calender Section ****/
+.trip_depart{
+    display: flex;
+    margin: 30px 0;
+}
+
+.trip_depart input[type="date"]{
+    background: #181717;
+    color: #fff;
+    border: 1px solid;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.trip_depart input[type="date"]:first-child{
+    border-right: none; 
+}
+
+.trip_depart input[type="date"]:last-child{
+    border-left: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.trip_depart input[type="date"]::-webkit-calendar-picker-indicator{
+    padding: 5px;
+    border: 1px solid #c7bdbd;
+    border-radius: 3px;
+    filter: invert(1);
+}
+
+/* Show Flight */
+.show_flight{
+    display: flex;
+    align-items: center;
+    float: right;
+    margin: 15px;
+    padding: 5px;
+}
+
+.promo_box{
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
+    color: #fff;
+}
+
+.promo_box .plus_icon{
+    font-size: .8rem;
+}
+
+.promo_box p{
+    font-size: 1rem;
+    margin: 5px;
+}
+
+.show_flight .btn{
+    color: #074e74;
+    font-size: .8rem;
+}
+
+.show_flight .btn:hover{
+    border: 1px solid #fff;
+    color: #fff;
+    background: transparent;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .flight_enquires{
+        display: flex;
+        margin: 10px 0 30px 70px;
+    }
+
+    .flight_items h1{
+        margin: 5px 0;
+    }
+
+    .departure_section{
+        display: block;
+    }
+
+    .flight_box{
+        height: 380px;
+    }  
+    
+    .people_section{
+        width: 280px;
+    }
+
+    .trip_section{
+        margin-top: 20px;
+    }  
+    
+    .trip_options span{
+        font-size: .9rem;
+    }
+
+    .trip_depart{
+        margin: 0;
+    }
+
+    .show_flight{
+        margin: 50px 15px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .flight_box{
+        height: 460px;
+    }
+
+    .flight_items h1{
+        font-size: .9rem;
+    }
+
+    .flight_enquires{
+        margin: 15px 50px;
+    }
+ 
+    .head h2{
+        font-size: .9rem;
+    }
+
+    .class{
+        width: 100px;
+        padding: 5px 8px;
+    }
+
+    .class span{
+        font-size: .8rem;
+    }
+
+    .from_to{
+        display: block;
+        margin: 15px 50px;
+    }
+
+    .arrows{
+        display: none;
+    } 
+
+    .people_section{
+        width: 220px;
+    }
+
+    .people{
+        padding: 10px 8px;
+    }
+
+    .people h3{
+        font-size: .8rem;
+    }
+
+    .people_controls {
+        gap: 3px;
+    }
+
+    .count_btn{
+        font-size: .6rem;
+    }
+
+    .count_display {
+        min-width: 20px;
+        font-size: .7rem;
+    }
+
+    .people_btn .btn{
+        padding: 5px 8px;
+        font-size: .7rem;
+    }
+
+    .input_box input{
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .trip_section{
+        display: block;
+        margin: 0 50px;
+    }    
+
+    .trip_head{
+        border-radius: 5px;
+    }
+
+    .trip{
+        margin-left: 3px;
+    }
+
+    .trip_head h2{
+        font-size: 1rem;
+        margin-left: 0px;
+    }
+
+    .trip_depart{
+        display: flex;
+        margin: 10px 0 0;
+        margin-left: 3px;
+    }
+
+    .trip_depart input{
+        width: 51%;
+    }
+
+    input[type="date"]:first-child{
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px; 
+    }
+
+    .show_flight{
+        margin: 30px 50px 10px;
+    }
+
+    .promo_box .plus_icon, .promo_box p{
+        font-size: 1rem;
+    }
+    
+    .show_flight .btn{
+        font-size: .8rem;
+    }
+ 
+} 
+
+@media only screen and (max-width: 438px){
+    .dropdown{
+        font-size: 1.3rem;
+    }
+
+    .promo_box .plus_icon, .promo_box p{
+        font-size: .7rem;
+    }
+
+    .show_flight{
+        margin: 30px 40px 10px;
+    }
+}
+
+@media only screen and (max-width: 376px){
+    .flight_items h1{
+        font-size: .8rem;
+        margin: 0;
+    }
+
+    .flight_header > div{
+        padding: 10px 0;
+    }
+
+    .flight_enquires{
+        margin: 15px;
+    }
+
+    .people_section{
+        width: 200px;
+    }
+
+    .people h3{
+        font-size: .7rem;
+    }
+
+    .count_btn{
+        font-size: .5rem;
+    }
+
+    .count_display,
+    .people_btn .btn {
+        font-size: .6rem;
+    }
+
+    .from_to{
+        display: block;
+        margin: 15px 20px;
+    }
+
+    .trip_section{
+        display: block;
+        margin: 0 20px;
+    }    
+
+    .trip_depart{
+        display: flex;
+        margin: 10px 0px 0;
+    }
+
+    .show_flight{
+        margin: 30px 10px 10px;
+    }
+
+    .promo_box .plus_icon, .promo_box p{
+        font-size: .8rem;
+    }
+    
+    .show_flight .btn{
+        font-size: .7rem;
+    }
+
+}
+
+@media only screen and (max-width: 321px){
+    .people_section{
+        width: 200px;
+        left: -35px;
+        padding: 0;
+    }
+
+    .people{
+        padding: 10px 5px;
+    }
+
+    .people_controls {
+        gap: 1px;
+    }
+
+    .promo_box .plus_icon, .promo_box p{
+        font-size: .6rem;
+    }
+    
+    .show_flight .btn{
+        font-size: .7rem;
+    }
+
+}    

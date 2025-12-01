@@ -1,0 +1,214 @@
+nav{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 9998;
+    background: #ffffffb7;
+    color: #222;
+    padding: 10px 50px;
+}
+
+.announcement {
+    width: 100%;
+    overflow: hidden;
+    background: #003049;
+    color: #fff;
+    padding: 8px 0;
+    position: relative;
+    z-index: 9999;
+}
+
+.scroll-text {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scrollText 12s linear infinite;
+}
+
+@keyframes scrollText {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+.logo_container{
+  color: #003049;
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.logo{
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.logo_span{
+    margin-left: 40px;
+    letter-spacing: 0.5px;
+    font-size: .63rem;
+    font-weight: 500;
+    font-style: italic;
+    text-transform: lowercase;
+    color: chocolate;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+.navitem, .auth{
+    display: flex;
+    align-items: center;
+}
+  
+.navitem li{
+    font-size: 1.2rem;
+    margin-right: 25px;
+    list-style: none;
+}
+
+.auth_text, .auth a, .auth_ a{
+    margin: 0 5px;
+    font-size: 1.2rem;
+    color: #222;
+}
+
+.user_icon{
+    font-size: 1.2rem;
+    color: chocolate;
+}
+ 
+span{
+    font-size: 1.2rem;
+}
+
+.navbar button{
+    display: none;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.auth_{
+    display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+    nav{
+        padding: 10px 30px;
+        color: #fff;
+    } 
+
+   .announcement {
+        padding: 5px 0;
+    }
+
+   .scroll-text{
+        font-size: .8rem;
+    }
+
+   .logo{
+        font-size: 1.1rem;
+    }
+
+    .logo_span{
+        margin-left: 30px;
+        font-size: .44rem;
+    }
+
+    .navitem{
+        background:  rgba(0, 0, 0, 0.927);
+        position: absolute;
+        flex-direction: column;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 100%;
+        padding: 50px 0;
+        z-index: 1;
+        opacity: 0;
+        transition: all 0.4s ease;
+    }
+
+    .navitem.open {
+       opacity: 1;
+    }
+
+    .navitem li{
+        margin: 30px 0;
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    .auth_text{
+        display: none;
+    }
+
+    .user_icon{
+        position: absolute;
+        right:  80px;
+    }
+
+    .navbar button{
+        display: flex;
+        font-size: 1.5rem;
+        z-index: 1;
+    }    
+    
+    .close{
+        color: #fff;
+    }
+
+    .auth_{
+        display: block;
+        margin: 80px 0;
+        z-index: 1;
+    }
+
+    .auth_ a{
+        color: #fff;
+        font-size: 1.4rem;
+    }
+
+}
+ 
+@media screen and (max-width: 425px) {
+   .logo{
+        font-size: 1rem;
+    }
+
+    .logo_span{
+        margin-left: 20px;
+    }
+
+    .navitem{
+        padding: 35px 0;
+    }
+
+    .navitem li{
+        margin: 10px 0;
+        font-size: 1rem;
+    }
+
+    .user_icon{
+        right:  70px;
+        font-size: 1.1rem;
+    }
+
+    .navbar button{
+        font-size: 1.2rem;
+    }    
+
+    .auth_{
+        margin: 30px 0;
+    }
+
+    .auth_ a{
+        font-size: .9rem;
+    }
+
+}
