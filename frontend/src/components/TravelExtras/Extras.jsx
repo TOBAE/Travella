@@ -1,4 +1,3 @@
-import React from 'react';
 import './Extras.css';
 import { FaHotel } from "react-icons/fa6";
 import { BsLuggage } from "react-icons/bs";

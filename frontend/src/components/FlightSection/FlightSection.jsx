@@ -1,4 +1,4 @@
-import React, {useState, useRef, useEffect} from "react";
+import {useState, useRef, useEffect} from "react";
 import "./flightSection.css";
 import { MdArrowDropDown } from "react-icons/md";
 import { CgArrowsExchange } from "react-icons/cg";
@@ -49,7 +49,6 @@ export default function FlightSection() {
 
   // toggle DropDown
   const toggleDropdown = (type) => {
-    // setOpenDropdown((prev) => (prev === type ? null : type));
     setOpenDropdown((prev) => {
     const next = prev === type ? null : type;
     // when opening passengers, copy current confirmed passengers into temp
@@ -59,18 +58,6 @@ export default function FlightSection() {
     return next;
   });
   };
-
-  
-
-  // simulate booking
-  // const handleBookFlight = () => {
-  //   const bookingData = {
-  //     classType: selectedClass,
-  //     passengers: passengers,
-  //   };
-  //   console.log("Booking data:", bookingData);
-  //   alert(`Flight booked!\n${JSON.stringify(bookingData, null, 2)}`);
-  // };
 
 
   return (

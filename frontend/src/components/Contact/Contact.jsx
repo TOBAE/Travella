@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 import {  FaLinkedinIn, FaAngleDown, FaFacebookF, FaXTwitter, FaInstagram } from "react-icons/fa6";
 import './Contact.css';
 
